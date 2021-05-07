@@ -1,0 +1,7 @@
+@startuml
+ReentrantLock -> NonfairSync: lock()
+NonfairSync -> AbstractQueuedSynchronizer: acquire(1)
+
+AbstractQueuedSynchronizer --> NonfairSync: tryAcquire(1)
+
+@enduml

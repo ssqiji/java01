@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhql.mybatis.BlogMapper">
+    <select id="selectBlog" parameterType="Integer" resultType="com.zhql.mybatis.Blog">
+        select * from blog where id = #{id}
+    </select>
+
+    <!--<resultMap id="detailedBlogResultMap" type="Blog">
+        <constructor>
+            <idArg column="blog_id" javaType="int"/>
+            <arg column="blog_name" javaType="string"/>
+        </constructor>
+    </resultMap>-->
+
+</mapper>
