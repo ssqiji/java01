@@ -10,5 +10,6 @@ public class MyTest {
         System.out.println("version 1");
         System.out.println("version 2");
         System.out.println("hello");
+        System.out.println("hot-fix commit 2");
     }
 }
